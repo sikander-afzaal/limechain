@@ -14,7 +14,7 @@ function Header() {
               header
                 ? "opacity-100 pointer-events-auto"
                 : "opacity-0 pointer-events-none"
-            } left-0  w-full lg:pointer-events-auto lg:opacity-100  lg:w-auto justify-start lg:justify-center items-start lg:bg-transparent bg-[#171e28] h-screen lg:h-auto lg:pl-0 pl-5 lg:pt-0 pt-[85px] lg:items-center lg:gap-5`}
+            } left-0  w-full lg:pointer-events-auto lg:opacity-100  lg:w-auto justify-start lg:justify-center items-start lg:bg-transparent bg-[#171e28] h-screen lg:h-auto lg:px-0 px-5 lg:pt-0 pt-[85px] lg:items-center lg:gap-5`}
           >
             <a
               href="#"

@@ -8,6 +8,10 @@ module.exports = {
         main: "#28eb9b",
         text: "#3e4246",
       },
+      backgroundImage: {
+        "hero-pattern": "url('/src/Assets/hero-bg.svg')",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
     },
   },
   plugins: [],
