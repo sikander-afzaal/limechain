@@ -2,8 +2,8 @@ import React from "react";
 import trust from "../../Assets/trust.svg";
 function Hero() {
   return (
-    <div className="flex justify-center items-start w-full bg-hero-pattern bg-cover min-h-[90vh] px-5">
-      <div className="flex gap-9 justify-start items-start flex-col w-full max-w-[1044px] pt-[50px] md:pt-[100px]">
+    <div className="flex justify-center items-start w-full  min-h-[90vh] px-5">
+      <div className="flex gap-9 justify-start items-start flex-col w-full max-w-[1244px] pt-[50px] md:pt-[100px]">
         <h1 className="text-black text-4xl sm:text-6xl font-bold">
           Web3 Development <br /> and Consulting
         </h1>
