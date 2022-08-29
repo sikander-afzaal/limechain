@@ -5,12 +5,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import logo from "../Assets/logo.svg";
+import logo from "../Assets/logo.png";
 function Footer() {
   return (
     <div className="flex justify-center items-center w-full px-5 mt-[100px] py-[50px] lg:py-[100px]">
-      <div className="flex gap-[50px] justify-center items-center sm:items-start flex-col w-full bg-white  max-w-[1244px]">
-        <img src={logo} alt="" />
+      <div className="flex gap-[50px] justify-center items-center sm:items-start flex-col w-full   max-w-[1244px]">
+        <img src={logo} className="w-[130px]" alt="" />
         <div className="flex justify-center lg:justify-between  lg:flex-row flex-col items-start gap-3 w-full">
           <div className="flex justify-between sm:flex-row flex-col lg:mb-0 mb-10 lg:w-auto w-full lg:justify-start items-center sm:items-start gap-[70px]">
             <div className="flex flex-col items-start justify-start gap-4">
@@ -148,7 +148,7 @@ function Footer() {
               </div>
               <div className="flex gap-2 justify-center items-center">
                 <input type="checkbox" />
-                <p className="text-text- font-normal text-sm">
+                <p className="text-white font-normal text-sm">
                   I have read and I agree to LimeChain's Privacy Policy
                 </p>
               </div>
@@ -184,7 +184,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col justify-between w-full items-center lg:gap-0 gap-9 lg:items-start">
+        <div className="flex lg:flex-row flex-col justify-between w-full items-center lg:gap-0 gap-9 ">
           <div className="flex justify-center items-center gap-5">
             <img src={logo} className="w-[120px] " alt="" />
             <img src={logo} className="w-[120px] " alt="" />
@@ -194,19 +194,19 @@ function Footer() {
             <a href="#">
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="text-[#0201015c] text-[25px] cursor-pointer"
+                className="text-white text-[25px] cursor-pointer"
               />
             </a>
             <a href="#">
               <FontAwesomeIcon
                 icon={faFacebookSquare}
-                className="text-[#0201015c] text-[25px] cursor-pointer"
+                className="text-white text-[25px] cursor-pointer"
               />
             </a>
             <a href="#">
               <FontAwesomeIcon
                 icon={faTwitter}
-                className="text-[#0201015c] text-[25px] cursor-pointer"
+                className="text-white text-[25px] cursor-pointer"
               />
             </a>
           </div>

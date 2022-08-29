@@ -15,8 +15,8 @@ function Review() {
             <div className="w-full md:w-[380px] h-[116px] flex justify-start md:justify-center items-center gap-5 bg-white shadow-service p-2">
               <img src={img} alt="" />
               <div className="text-left flex flex-col items-start gap-1">
-                <h2 className="text-text font-bold text-lg">Tyler Ward</h2>
-                <p className="text-text font-semibold text-sm">
+                <h2 className="text-black font-bold text-lg">Tyler Ward</h2>
+                <p className="text-black font-semibold text-sm">
                   Co-Founder BarnBridge and Universe.XYZ
                 </p>
               </div>
@@ -24,8 +24,8 @@ function Review() {
             <div className="w-full md:w-[380px] h-[116px] flex justify-start md:justify-center items-center gap-5 bg-white shadow-service p-2">
               <img src={img} alt="" />
               <div className="text-left flex flex-col items-start gap-1">
-                <h2 className="text-text font-bold text-lg">Tyler Ward</h2>
-                <p className="text-text font-semibold text-sm">
+                <h2 className="text-black font-bold text-lg">Tyler Ward</h2>
+                <p className="text-black font-semibold text-sm">
                   Co-Founder BarnBridge and Universe.XYZ
                 </p>
               </div>
