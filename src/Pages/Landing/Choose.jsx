@@ -8,22 +8,22 @@ import ChooseBox from "../../Components/ChooseBox";
 function Choose() {
   const data = [
     {
-      head: "Pioneers",
-      desc: "Since 2017, we've been helping both start-ups and established enterprises implement Web3 solutions and build on blockchain. We've worked on over 150 projects and partnered with notable Web3 players like Hedera Hashgraph and Polkadot.",
+      head: "Providing Solutions to Advance Web2.5 & Web 3 Adoption",
+      desc: "Blockchain adoption is accelerating faster than the internet during the .com era. However, many Web2-native companies are struggling to understand the commercial viability of integrating Web3 technology solutions into their businesses. Labz has worked with a plethora of projects to provide cutting-edge technology which assists in the mass adoption challenge ranging from email to wallet solutions and creation of entire DeFi ecosystems.",
       icon: icon1,
       text: "white",
       bg: "bg-[#3e4858]",
     },
     {
-      head: "Deep expertise",
-      desc: "We’re extremely well-versed in blockchain and Web3. With a team of over 100 brilliant people, we can tackle a wide range of projects from developing smart contracts, through building NFT marketplaces, to developing purpose-built blockchains.",
+      head: "Web3 Enthusiast",
+      desc: "The team at Labz are well-informed in the blockchain and Web3 space as well as traditional corporate enterprise. With a dedicated team, Labz will support your project’s journey, from product inception to launch, to exceed expectations and achieve the common goal of adding valuable ecosystems to the Web3 space. ",
       icon: icon2,
       text: "[#181e27]",
       bg: "bg-[#55c2ca]",
     },
     {
-      head: "Holistic approach",
-      desc: "Thanks to our diverse skill set, we can support you during every stage of product development. We can help you flesh out your product idea, test its viability, devise and execute implementation strategies and provide post-launch support.",
+      head: "Collaborative Approach",
+      desc: "The Labz takes a collaborative approach during the product development journey of your build. The team will assist in unfolding and ascertain the end goal and product(s) ideas, test the viability, provide a step-by-step implementation plan for the success of the product(s) launch and provide post-launch support. ",
       icon: icon3,
       text: "[#181e27]",
       bg: "bg-[#f2f1f7]",
@@ -37,13 +37,13 @@ function Choose() {
     },
   ];
   return (
-    <div className="flex justify-center items-center w-full px-5 mt-[80px]">
+    <div className="flex justify-center  items-center w-full px-5 mt-[80px]">
       <div className="flex isolate gap-10 justify-center items-center flex-col w-full max-w-[1244px] relative">
         <img src={bg} className="-z-[10] h-full absolute left-0 top-0" alt="" />
         <h1 className="text-center font-bold text-[40px] text-head">
           Why Choose LimeChain
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:grid-rows-2 w-full max-w-[1000px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:grid-rows-2 w-full max-w-[1200px]">
           {data.map((elem, id) => {
             return <ChooseBox key={"choose" + id} {...elem} />;
           })}

@@ -5,10 +5,12 @@ function Review() {
     <div className="flex justify-center items-center w-full px-5 mt-[100px] text-center">
       <div className="flex isolate gap-1 justify-center items-center flex-col w-full max-w-[1244px] relative">
         <h2 className="uppercase text-main font-bold text-[20px]">Feedback</h2>
-        <h1 className="text-head font-bold text-[40px]">What people say</h1>
+        <h1 className="text-head font-bold text-[40px] text-center">
+          Labz Client Testimonial
+        </h1>
         <p className="max-w-[700px] font-normal text-text text-[20px]">
-          We help startups and corporate clients build secure, trusted, and
-          decentralized products using Blockchain.
+          Labz assists our start up clients and corporate partners to build
+          cutting-edge, secure and decentralised product ecosystems:
         </p>
         <div className="flex justify-between md:flex-row flex-col w-full items-center md:items-start gap-5 mt-10">
           <div className="md:w-auto w-full flex justify-center items-start flex-col gap-7">

@@ -1,4 +1,4 @@
-import { faBars, faSearch, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import gif from "../Assets/gif.gif";
@@ -8,10 +8,9 @@ function Header() {
     <div className="w-full flex justify-center items-center px-5">
       <div className="flex justify-between items-center w-full max-w-[1500px] h-[84px]">
         <div className=" flex justify-center items-center gap-6 xl:gap-10">
-          {/* <h1 className="text-white text-[40px] leading-[1] font-bold">Labz</h1> */}
           <img src={gif} className="w-[50px] object-contain h-full " alt="" />
           <div
-            className={`flex lg:flex-row flex-col lg:static fixed top-0 transition-all ${
+            className={`flex lg:flex-row flex-col lg:static z-40 fixed top-0 transition-all ${
               header
                 ? "opacity-100 pointer-events-auto"
                 : "opacity-0 pointer-events-none"
@@ -41,36 +40,21 @@ function Header() {
             >
               Clients
             </a>
-            <a
-              href="#"
-              className="lg:w-auto w-full lg:py-0 py-4 text-white border-b-[1px] border-solid border-[#212934]  lg:text-text font-bold text-base no-underline lg:border-b-[3px] lg:border-transparent hover:text-main lg:hover:border-main transition-colors lg:hover:text-text"
-            >
-              Use cases
-            </a>
-            <a
-              href="#"
-              className="lg:w-auto w-full lg:py-0 py-4 text-white border-b-[1px] border-solid border-[#212934]  lg:text-text font-bold text-base no-underline lg:border-b-[3px] lg:border-transparent hover:text-main lg:hover:border-main transition-colors lg:hover:text-text"
-            >
-              Blog
-            </a>
+
             <button className=" lg:hidden block bg-btn text-white h-[45px] w-full mt-[120px] text-base font-bold rounded transition-all hover:bg-[#171e28] cursor-pointer duration-500">
-              Ready to talk?
+              Get in contact!
             </button>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-4 lg:gap-9 relative z-30">
+        <div className="flex justify-center items-center gap-4 lg:gap-9 relative z-50">
           <FontAwesomeIcon
             onClick={() => setHeader((prev) => !prev)}
             icon={header ? faXmark : faBars}
-            className="text-[#818a91] text-[25px] lg:hidden block"
+            className="text-[#818a91]  text-[25px] lg:hidden block"
           />
           <button className="lg:block hidden bg-btn text-white h-[45px] w-[215px] text-base font-bold rounded transition-all hover:bg-[#171e28] cursor-pointer duration-500">
-            Ready to talk?
+            Get in contact!
           </button>
-          <FontAwesomeIcon
-            className="text-[#818a91] text-[25px]"
-            icon={faSearch}
-          />
         </div>
       </div>
     </div>

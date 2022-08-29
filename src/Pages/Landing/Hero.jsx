@@ -1,54 +1,24 @@
 import React from "react";
-import trust from "../../Assets/trust.svg";
+
 import logo from "../../Assets/logo.png";
 function Hero() {
   return (
     <div className="flex justify-center items-start w-full  px-5">
-      <div className="flex gap-9 relative justify-start items-start flex-col w-full max-w-[1244px] pt-[50px] md:pt-[100px]">
+      <div className="flex gap-9 relative justify-start items-start min-h-[600px] md:min-h-screen flex-col w-full max-w-[1244px] pt-[50px] md:pt-[150px]">
         <h1 className="text-head text-4xl sm:text-6xl font-bold">
-          Web3 Development <br /> and Consulting
+          Web3 Technology <br /> Development & Solutions
         </h1>
         <p className="text-text text-xl sm:text-2xl font-normal">
-          Blockchain | DeFi | Metaverse | Web3 Gaming | NFTs | DAOs | Tooling
+          Providing Adoption at Scale Through Cutting-Edge Decentralized
+          Ecosystem and Product Builds
         </p>
-        <button className="w-[260px] h-[50px] text-white bg-main rounded-md hover:bg-[#21d98d] hover:scale-110 transition-all text-base font-bold">
-          Get Started
+        <p className="text-text text-xl sm:text-2xl font-normal">
+          Blockchain | Email to Wallet Solution | DeFi | NFTs | Tooling |
+        </p>
+        <button className="w-[260px] h-[50px] text-white bg-main rounded-md hover:opacity-60  hover:scale-105 transition-all text-base font-bold">
+          Talk to us
         </button>
-        <div className="w-full flex flex-col justify-start items-start gap-4 mt-[20px] md:mt-[100px]">
-          <h2 className="font-bold text-[22px] text-text">Trusted By:</h2>
-          <div className="sm:flex grid grid-cols-2 w-full sm:justify-between sm:items-center flex-wrap gap-2 sm:gap-6 sm:max-w-[900px]">
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-          </div>
-        </div>
+
         <div className="lg:block hidden absolute right-0 2xl:-right-[10%] h-[1000px] w-[800px] -z-[1]  -top-[10%]">
           <img src={logo} className="opacity-30  w-full h-full" alt="" />
           <div className="absolute left-0 bottom-0 bg-gradient-black h-[90px] w-full"></div>
