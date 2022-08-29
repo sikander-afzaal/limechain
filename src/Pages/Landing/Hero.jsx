@@ -1,9 +1,10 @@
 import React from "react";
 import trust from "../../Assets/trust.svg";
+import logo from "../../Assets/logo.png";
 function Hero() {
   return (
     <div className="flex justify-center items-start w-full  px-5">
-      <div className="flex gap-9 justify-start items-start flex-col w-full max-w-[1244px] pt-[50px] md:pt-[100px]">
+      <div className="flex gap-9 relative justify-start items-start flex-col w-full max-w-[1244px] pt-[50px] md:pt-[100px]">
         <h1 className="text-head text-4xl sm:text-6xl font-bold">
           Web3 Development <br /> and Consulting
         </h1>
@@ -47,6 +48,14 @@ function Hero() {
               <img src={trust} alt="" />
             </div>
           </div>
+        </div>
+        <div className="lg:block hidden absolute right-0 2xl:-right-[10%] w-[800px] -z-[1]  -top-[10%]">
+          <img
+            src={logo}
+            className="opacity-60  w-[full] object-cover "
+            alt=""
+          />
+          <div className="absolute left-0 bottom-0 bg-gradient-black h-[90px] w-full"></div>
         </div>
       </div>
     </div>

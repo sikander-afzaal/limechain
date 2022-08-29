@@ -19,7 +19,7 @@ function Choose() {
       desc: "We’re extremely well-versed in blockchain and Web3. With a team of over 100 brilliant people, we can tackle a wide range of projects from developing smart contracts, through building NFT marketplaces, to developing purpose-built blockchains.",
       icon: icon2,
       text: "[#181e27]",
-      bg: "bg-main",
+      bg: "bg-[#55c2ca]",
     },
     {
       head: "Holistic approach",

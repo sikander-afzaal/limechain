@@ -8,10 +8,8 @@ import Talk from "./Talk";
 function Index() {
   return (
     <div>
-      <div className="bg-hero-pattern bg-cover">
-        <Hero />
-        <Choose />
-      </div>
+      <Hero />
+      <Choose />
       <Services />
       <div className="flex justify-center items-center gap-8 lg:gap-[90px] mt-[50px] lg:mt-[80px] lg:flex-row flex-col text-center px-5">
         <div className="flex flex-col  justify-center items-center gap-0 text-center">
