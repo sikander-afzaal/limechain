@@ -1,13 +1,15 @@
 import { faBars, faSearch, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+import gif from "../Assets/gif.gif";
 function Header() {
   const [header, setHeader] = useState(false);
   return (
     <div className="w-full flex justify-center items-center px-5">
       <div className="flex justify-between items-center w-full max-w-[1500px] h-[84px]">
         <div className=" flex justify-center items-center gap-6 xl:gap-10">
-          <h1 className="text-white text-[40px] leading-[1] font-bold">Labz</h1>
+          {/* <h1 className="text-white text-[40px] leading-[1] font-bold">Labz</h1> */}
+          <img src={gif} className="w-[50px] object-contain h-full " alt="" />
           <div
             className={`flex lg:flex-row flex-col lg:static fixed top-0 transition-all ${
               header
