@@ -13,6 +13,9 @@ module.exports = {
         "hero-pattern": "url('/src/Assets/hero-bg.svg')",
         "footer-texture": "url('/img/footer-texture.png')",
       },
+      boxShadow: {
+        service: "0 8px 64px 5px rgb(17 17 17 / 4%)",
+      },
     },
   },
   plugins: [],
