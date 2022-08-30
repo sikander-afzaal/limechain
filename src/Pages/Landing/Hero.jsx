@@ -19,8 +19,12 @@ function Hero() {
           Talk to us
         </button>
 
-        <div className="lg:block hidden absolute right-0 2xl:-right-[10%] h-[1000px] w-[800px] -z-[1]  -top-[10%]">
-          <img src={logo} className="opacity-30  w-full h-full" alt="" />
+        <div className=" absolute right-0 2xl:-right-[10%] h-[1000px] w-full max-w-[800px] -z-[1]  -top-[10%]">
+          <img
+            src={logo}
+            className="opacity-30  object-contain  w-full h-full"
+            alt=""
+          />
           <div className="absolute left-0 bottom-0 bg-gradient-black h-[90px] w-full"></div>
         </div>
       </div>
