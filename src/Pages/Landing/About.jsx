@@ -1,19 +1,6 @@
 import React from "react";
-import ServiceBox from "../../Components/ServiceBox";
 
 function About() {
-  const data = [
-    "Email to Wallet Integration",
-    "Decentralised Exchanges (DEXs)",
-    "Crypto Payment Gateways",
-    "Open / Closed NFT Marketplaces",
-    "NFT Minting Contracts",
-    "Entire NFT Collection Creations",
-    "Cryptocurrency Token Contracts",
-    "Custom Smart Contract development ",
-    "NFT Design and Deployment ",
-    "And much more - Get in contact with us!",
-  ];
   return (
     <div className="flex justify-center  items-center w-full px-5 mt-[100px]">
       <div className="flex isolate gap-10 justify-center items-start flex-col w-full max-w-[1244px] relative">

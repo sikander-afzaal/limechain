@@ -1,14 +1,8 @@
-import {
-  faFacebookSquare,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import logo from "../Assets/logo.png";
 function Footer() {
   return (
-    <div className="flex justify-center items-center w-full px-5 mt-[100px] py-[50px] lg:py-[100px]">
+    <div className="flex justify-center items-center w-full px-5 mt-[100px] py-[50px]">
       <div className="flex gap-[50px] justify-center items-center sm:items-start flex-col w-full   max-w-[1244px]">
         <img src={logo} className="w-[130px]" alt="" />
         <div className="flex justify-center lg:justify-between  lg:flex-row flex-col items-start gap-3 w-full">
@@ -164,55 +158,8 @@ function Footer() {
                   England, KT14 6LB
                 </p>
               </div>
-              <div className="flex justify-start items-start gap-1 mt-2 flex-col">
-                <h2 className="text-head font-bold text-[18px]">
-                  Sofia, Bulgaria
-                </h2>
-                <p className="text-text text-sm">
-                  Sofia, “Tetrix” Business Center
-                </p>
-              </div>
-              <div className="flex justify-start items-start gap-1 mt-2 flex-col">
-                <h2 className="text-head font-bold text-[18px]">Email:</h2>
-                <a
-                  className="hover:text-main text-text text-sm no-underline"
-                  href="mailto:hi@limechain.tech"
-                >
-                  hi@limechain.tech
-                </a>
-              </div>
             </div>
           </div>
-        </div>
-        <div className="flex lg:flex-row flex-col justify-between w-full items-center lg:gap-0 gap-9 ">
-          <div className="flex justify-center items-center gap-5">
-            <img src={logo} className="w-[120px] " alt="" />
-            <img src={logo} className="w-[120px] " alt="" />
-          </div>
-          <div className="flex justify-center items-center gap-4">
-            <p className="text-text text-sm">Follow LimeChain for updates</p>
-            <a href="#">
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className="text-white text-[25px] cursor-pointer"
-              />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon
-                icon={faFacebookSquare}
-                className="text-white text-[25px] cursor-pointer"
-              />
-            </a>
-            <a href="#">
-              <FontAwesomeIcon
-                icon={faTwitter}
-                className="text-white text-[25px] cursor-pointer"
-              />
-            </a>
-          </div>
-          <h2 className="text-head font-bold text-base">
-            Sitemap © 2022 LimeChain Privacy Policy
-          </h2>
         </div>
       </div>
     </div>
