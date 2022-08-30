@@ -27,16 +27,6 @@ function About() {
           provide holistic solutions for our clients in their transition from
           Web2 to Web3.
         </p>
-        <div className="flex flex-col w-full items-center justify-center  mt-[50px]">
-          <h1 className="text-center font-bold text-[40px] text-head">
-            Labz Tech Services
-          </h1>
-          <div className="xl:grid flex flex-wrap justify-center items-center xl:place-items-center xl:grid-cols-4 w-full gap-4 mt-[40px]">
-            {data.map((elem, idx) => {
-              return <ServiceBox text={elem} key={"about" + idx} />;
-            })}
-          </div>
-        </div>
       </div>
     </div>
   );
