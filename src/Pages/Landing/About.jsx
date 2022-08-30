@@ -1,4 +1,5 @@
 import React from "react";
+import ServiceBox from "../../Components/ServiceBox";
 
 function About() {
   const data = [
@@ -32,15 +33,7 @@ function About() {
           </h1>
           <div className="xl:grid flex flex-wrap justify-center items-center xl:place-items-center xl:grid-cols-4 w-full gap-4 mt-[40px]">
             {data.map((elem, idx) => {
-              return (
-                <div
-                  key={idx}
-                  className="flex justify-between items-start w-[275px] h-[130px] rounded p-5 flex-col bg-main text-white"
-                >
-                  <div className="w-[30%] h-[2px] bg-white"></div>
-                  <p className="text-lg">{elem}</p>
-                </div>
-              );
+              return <ServiceBox text={elem} key={"about" + idx} />;
             })}
           </div>
         </div>

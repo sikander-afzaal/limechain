@@ -1,11 +1,9 @@
 import React from "react";
-import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function ServiceBox({ text }) {
   return (
-    <div className="cursor-pointer lg:justify-center  hover:scale-105 transition-all w-full h-[120px] p-4 md:p-7 bg-white shadow-service flex justify-between items-center rounded gap-6">
-      <h2 className="text-black font-bold text-[22px]">{text}</h2>
-      <FontAwesomeIcon icon={faLongArrowRight} className="text-main text-xl" />
+    <div className="flex justify-between items-start w-[275px] h-[130px] rounded p-5 flex-col bg-main text-white">
+      <div className="w-[30%] h-[2px] bg-white"></div>
+      <p className="text-lg">{text}</p>
     </div>
   );
 }

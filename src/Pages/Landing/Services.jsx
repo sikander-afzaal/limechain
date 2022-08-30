@@ -14,7 +14,7 @@ function Services() {
         <h1 className="text-head font-bold text-[40px] text-center">
           Labz’s Service Overview
         </h1>
-        <div className="mt-[20px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 w-full gap-7">
+        <div className="mt-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center  xl:grid-cols-4 w-full gap-7">
           <ServiceBox text={"Email to Wallet Functionality"} />
           <ServiceBox text={"Smart Contract Development"} />
           <ServiceBox text={"Entire DeFi Ecosystem Creation"} />
