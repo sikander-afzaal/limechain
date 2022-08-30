@@ -3,7 +3,7 @@ import logo from "../Assets/logo.png";
 function Footer() {
   return (
     <div className="flex justify-center items-center w-full px-5 mt-[100px] py-[50px]">
-      <div className="flex gap-[50px] justify-center items-center sm:items-center flex-col w-full   max-w-[1244px]">
+      <div className="flex gap-[50px] justify-center  items-start flex-col w-full   max-w-[1244px]">
         <img src={logo} className="w-[130px]" alt="" />
 
         {/* <div className="flex justify-between sm:flex-row flex-col lg:mb-0 mb-10 lg:w-auto w-full lg:justify-start items-center sm:items-start gap-[70px]">

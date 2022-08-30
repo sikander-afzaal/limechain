@@ -1,5 +1,4 @@
 import React from "react";
-import bg from "../../Assets/choose.png";
 import icon1 from "../../Assets/choose-icon1.svg";
 import icon2 from "../../Assets/choose-icon2.svg";
 import icon3 from "../../Assets/choose-icon3.svg";
@@ -39,9 +38,8 @@ function Choose() {
   return (
     <div className="flex justify-center  items-center w-full px-5 mt-[80px]">
       <div className="flex isolate gap-10 justify-center items-center flex-col w-full max-w-[1244px] relative">
-        <img src={bg} className="-z-[10] h-full absolute left-0 top-0" alt="" />
         <h1 className="text-center font-bold text-[40px] text-head">
-          Why Choose LimeChain
+          Why Choose Labz
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:grid-rows-2 w-full max-w-[1200px]">
           {data.map((elem, id) => {

@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../../Assets/logo.png";
 function Hero() {
   return (
-    <div className="flex justify-center items-start w-full  px-5">
+    <div id="home" className="flex justify-center items-start w-full  px-5">
       <div className="flex gap-9 relative justify-start items-start min-h-[600px] md:min-h-screen flex-col w-full max-w-[1244px] pt-[50px] md:pt-[150px]">
         <h1 className="text-head text-4xl sm:text-6xl font-bold">
           Web3 Technology <br /> Development & Solutions

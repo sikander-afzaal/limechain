@@ -14,7 +14,10 @@ function Services() {
     "And much more - Get in contact with us!",
   ];
   return (
-    <div className="flex w-full justify-center items-center mt-[80px] px-5">
+    <div
+      id="services"
+      className="flex w-full justify-center items-center mt-[80px] px-5"
+    >
       <div className="relative flex justify-center items-center flex-col w-full isolate max-w-[1400px] gap-1">
         <h1 className="text-center font-bold text-[40px] text-head">
           Labz Tech Services

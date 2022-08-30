@@ -2,7 +2,10 @@ import React from "react";
 
 function About() {
   return (
-    <div className="flex justify-center  items-center w-full px-5 mt-[100px]">
+    <div
+      id="about"
+      className="flex justify-center  items-center w-full px-5 mt-[100px]"
+    >
       <div className="flex isolate gap-10 justify-center items-start flex-col w-full max-w-[1244px] relative">
         <h1 className="text-head text-4xl sm:text-5xl font-bold max-w-[900px]">
           Labz has a mission to provide <br className="hidden md:block" /> our
