@@ -6,8 +6,8 @@ function Talk() {
       <div className="flex isolate gap-1 justify-center lg:flex-row flex-col items-center w-full  shadow-service max-w-[1244px] relative">
         <div className="p-5 lg:pl-5 lg:p-0 flex justify-center items-start flex-col w-full lg:w-1/2 gap-3">
           <h1 className="text-black font-bold text-[20px] md:text-[25px]">
-            We've helped 150+ startups, frens and fomos build secure and trusted
-            Web3 products.
+            We've helped multiple startups, frens and fomos build secure and
+            trusted Web3 products.
           </h1>
           <p className="text-black font-normal text-lg">
             Let's build something together!
