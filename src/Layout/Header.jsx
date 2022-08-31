@@ -17,24 +17,28 @@ function Header() {
             } left-0  w-full md:pointer-events-auto md:opacity-100  md:w-auto justify-start md:justify-center items-start md:bg-transparent bg-[#171e28] h-screen md:h-auto md:px-0 px-5 md:pt-0 pt-[85px] md:items-center md:gap-5`}
           >
             <a
+              onClick={() => setHeader(false)}
               href="#home"
               className="md:w-auto w-full md:py-0 py-4 text-white border-b-[1px] border-solid border-[#212934]  md:text-text font-bold text-base no-underline md:border-b-[3px] md:border-transparent hover:text-main md:hover:border-main transition-colors md:hover:text-text"
             >
               Home
             </a>
             <a
+              onClick={() => setHeader(false)}
               href="#about"
               className="md:w-auto w-full md:py-0 py-4 text-white border-b-[1px] border-solid border-[#212934]  md:text-text font-bold text-base no-underline md:border-b-[3px] md:border-transparent hover:text-main md:hover:border-main transition-colors md:hover:text-text"
             >
               About us
             </a>
             <a
+              onClick={() => setHeader(false)}
               href="#services"
               className="md:w-auto w-full md:py-0 py-4 text-white border-b-[1px] border-solid border-[#212934]  md:text-text font-bold text-base no-underline md:border-b-[3px] md:border-transparent hover:text-main md:hover:border-main transition-colors md:hover:text-text"
             >
               Services
             </a>
             <a
+              onClick={() => setHeader(false)}
               href="#clients"
               className="md:w-auto w-full md:py-0 py-4 text-white border-b-[1px] border-solid border-[#212934]  md:text-text font-bold text-base no-underline md:border-b-[3px] md:border-transparent hover:text-main md:hover:border-main transition-colors md:hover:text-text"
             >
