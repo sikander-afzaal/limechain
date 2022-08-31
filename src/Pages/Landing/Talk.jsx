@@ -1,9 +1,9 @@
 import React from "react";
-import img from "../../Assets/talk.png";
+import img from "../../Assets/bg.jpeg";
 function Talk() {
   return (
-    <div className="flex justify-center items-center w-full px-5 mt-[100px] bg-white ">
-      <div className="flex isolate gap-1 justify-center lg:flex-row flex-col items-center w-full  shadow-service max-w-[1244px] relative">
+    <div className="flex justify-center items-center w-full lg:px-5 mt-[100px]  bg-white">
+      <div className="flex isolate gap-1 justify-center lg:flex-row flex-col items-center  w-full  shadow-service max-w-[1244px] relative">
         <div className="p-5 lg:pl-5 lg:p-0 flex justify-center items-start flex-col w-full lg:w-1/2 gap-3">
           <h1 className="text-black font-bold text-[20px] md:text-[25px]">
             We've helped multiple startups, frens and fomos build secure and
@@ -21,7 +21,11 @@ function Talk() {
             </button>
           </div>
         </div>
-        <img src={img} className="lg:w-1/2 w-full object-cover" alt="" />
+        <img
+          src={img}
+          className="lg:-mr-1 max-w-[700px] lg:max-w-none lg:ml-11 ml-0 lg:w-1/2 w-full object-cover"
+          alt=""
+        />
       </div>
     </div>
   );
