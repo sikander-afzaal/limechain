@@ -18,7 +18,7 @@ function Choose() {
       desc: "The team at Labz are well-informed in the blockchain and Web3 space as well as traditional corporate enterprise. With a dedicated team, Labz will support your project’s journey, from product inception to launch, to exceed expectations and achieve the common goal of adding valuable ecosystems to the Web3 space. ",
       icon: icon2,
       text: "[#181e27]",
-      bg: "bg-[#55c2ca]",
+      bg: "bg-[#5a6cde]",
     },
     {
       head: "Collaborative Approach",
@@ -32,7 +32,7 @@ function Choose() {
       desc: "Being experts in everything blockchain, we're not bound to any one chain or framework. This gives us the flexibility to always use the best tool for a particular job. We also specialize in cross-chain technologies like blockchain bridges.",
       icon: icon4,
       text: "white",
-      bg: "bg-[#5a6cde]",
+      bg: "bg-[#55c2ca]",
     },
   ];
   return (
