@@ -12,7 +12,7 @@ function Review() {
           <h2 className="uppercase text-main font-bold text-[20px]">
             Feedback
           </h2>
-          <h1 className="text-head font-bold text-[40px] text-center">
+          <h1 className="text-head font-bold text-[30px] sm:text-[40px] text-center">
             Labz Client Testimonial
           </h1>
           <p className="max-w-[700px] font-normal text-text text-[20px]">
