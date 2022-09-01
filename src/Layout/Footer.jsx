@@ -1,11 +1,9 @@
 import React from "react";
-import logo from "../Assets/logo.png";
+
 function Footer() {
   return (
     <div className="flex justify-center items-center w-full px-5 mt-[100px] py-[50px]">
       <div className="flex gap-[50px] justify-center  items-start flex-col w-full   max-w-[1244px]">
-        <img src={logo} className="w-[160px]" alt="" />
-
         <div className="  flex flex-col justify-start items-center gap-3">
           <h2 className="text-sm font-semibold text-head">
             Subscribe to receive updates
@@ -31,7 +29,7 @@ function Footer() {
           <div className="flex self-start justify-start items-start gap-1 mt-2 flex-col">
             <h2 className="text-head font-bold text-[18px]">The labz</h2>
             <p className="text-text text-base">
-              83 friar gate, <br /> Derby, <br /> DE1 1FL, <br /> Uk
+              83 friar gate, Derby, <br /> DE1 1FL, Uk
             </p>
           </div>
         </div>

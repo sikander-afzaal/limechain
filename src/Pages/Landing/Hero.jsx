@@ -21,9 +21,12 @@ function Hero() {
         </Fade>
 
         <Fade delay={1700}>
-          <button className="w-[260px] h-[50px] text-white bg-main rounded-md hover:opacity-60  hover:scale-105 transition-all text-base font-bold">
+          <a
+            href="#about"
+            className="no-underline grid place-items-center w-[260px] h-[50px] text-white bg-main rounded-md hover:opacity-60  hover:scale-105 transition-all text-base font-bold"
+          >
             Talk to us
-          </button>
+          </a>
         </Fade>
         <div className=" absolute right-0 2xl:-right-[10%] h-[1000px] w-full max-w-[800px] -z-[1]  -top-[10%]">
           <img

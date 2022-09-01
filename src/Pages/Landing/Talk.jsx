@@ -19,9 +19,12 @@ function Talk() {
           </Fade>
           <Fade delay={1500}>
             <div className="flex justify-center flex-col w-full xl:flex-row items-center gap-4">
-              <button className="w-full xl:w-[260px] h-[50px] text-white bg-main rounded-md hover:bg-[#21d98d] hover:scale-105 transition-all text-base font-bold">
+              <a
+                href="#about"
+                className="grid place-items-center no-underline w-full xl:w-[260px] h-[50px] text-white bg-main rounded-md hover:bg-[#21d98d] hover:scale-105 transition-all text-base font-bold"
+              >
                 Contact Us
-              </button>
+              </a>
               <button className="w-full xl:w-[300px] h-[50px] text-main border-2 border-solid border-main bg-transparent rounded-md hover:bg-main duration-300 transition-all text-base font-bold hover:text-white">
                 Check our clients
               </button>{" "}

@@ -14,7 +14,7 @@ function Header() {
               header
                 ? "opacity-100 pointer-events-auto"
                 : "opacity-0 pointer-events-none"
-            } left-0  w-full md:pointer-events-auto md:opacity-100  md:w-auto justify-start md:justify-center items-start md:bg-transparent bg-[#171e28] h-screen md:h-auto md:px-0 px-5 md:pt-0 pt-[85px] md:items-center md:gap-5`}
+            } left-0  w-full md:pointer-events-auto md:opacity-100  md:w-auto justify-start md:justify-center items-start md:bg-transparent bg-[#171e28] h-full md:h-auto md:px-0 px-5 md:pt-0 pt-[85px] md:items-center md:gap-5`}
           >
             <a
               onClick={() => setHeader(false)}
@@ -45,9 +45,13 @@ function Header() {
               Clients
             </a>
 
-            <button className=" md:hidden block bg-btn text-white h-[45px] w-full mt-[120px] text-base font-bold rounded transition-all hover:bg-[#171e28] cursor-pointer duration-500">
+            <a
+              onClick={() => setHeader(false)}
+              href="#about"
+              className="no-underline md:hidden grid place-items-center bg-btn text-white h-[45px] w-full mt-[120px] text-base font-bold rounded transition-all hover:bg-[#171e28] cursor-pointer duration-500"
+            >
               Get in contact!
-            </button>
+            </a>
           </div>
         </div>
         <div className="flex justify-center items-center gap-4 md:gap-9 relative z-50">
@@ -56,9 +60,12 @@ function Header() {
             icon={header ? faXmark : faBars}
             className="text-[#818a91]  text-[25px] md:hidden block"
           />
-          <button className="md:block hidden bg-btn text-white h-[45px] w-[215px] text-base font-bold rounded transition-all hover:bg-[#171e28] cursor-pointer duration-500">
+          <a
+            href="#about"
+            className="no-underline  justify-center items-center md:flex hidden bg-btn text-white h-[45px] w-[215px] text-base font-bold rounded transition-all hover:bg-[#171e28] cursor-pointer duration-500"
+          >
             Get in contact!
-          </button>
+          </a>
         </div>
       </div>
     </div>

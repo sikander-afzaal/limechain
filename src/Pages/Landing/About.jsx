@@ -2,7 +2,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Fade } from "react-reveal";
-
+import logo from "../../Assets/logo.png";
 function About() {
   const [drop, setDrop] = useState([false, false, false]);
   const [dropText, setDropText] = useState([
@@ -41,6 +41,7 @@ function About() {
               transition from Web2 to Web3.
             </p>
           </Fade>
+          <img src={logo} className="w-[200px]" alt="" />
         </div>
         <form className="flex justify-center items-center flex-col gap-5 w-full lg:w-1/2">
           <div className="flex justify-center sm:flex-row flex-col w-full items-center gap-4">
