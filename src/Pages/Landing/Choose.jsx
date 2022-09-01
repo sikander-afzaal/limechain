@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import icon1 from "../../Assets/choose-icon1.svg";
 import icon2 from "../../Assets/choose-icon2.svg";
 import icon3 from "../../Assets/choose-icon3.svg";
@@ -38,14 +39,18 @@ function Choose() {
   return (
     <div className="flex justify-center  items-center w-full px-5 mt-[80px]">
       <div className="flex isolate gap-10 justify-center items-center flex-col w-full max-w-[1244px] relative">
-        <h1 className="text-center font-bold text-[40px] text-head">
-          Why Choose Labz
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:grid-rows-2 w-full max-w-[1200px]">
-          {data.map((elem, id) => {
-            return <ChooseBox key={"choose" + id} {...elem} />;
-          })}
-        </div>
+        <Fade>
+          <h1 className="text-center font-bold text-[40px] text-head">
+            Why Choose Labz
+          </h1>
+        </Fade>
+        <Fade bottom>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:grid-rows-2 w-full max-w-[1200px]">
+            {data.map((elem, id) => {
+              return <ChooseBox key={"choose" + id} {...elem} />;
+            })}
+          </div>
+        </Fade>
       </div>
     </div>
   );
