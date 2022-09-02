@@ -21,10 +21,7 @@ function About() {
     });
   };
   return (
-    <div
-      id="about"
-      className="flex justify-center  items-center w-full px-5 mt-[100px]"
-    >
+    <div className="flex justify-center  items-center w-full px-5 mt-[100px]">
       <div className="flex isolate gap-10 justify-center items-start lg:flex-row flex-col  w-full 3xl:max-w-[2000px] max-w-[1244px] relative">
         <div className="flex isolate gap-10 justify-center items-start flex-col w-full lg:w-1/2">
           <Fade top>
@@ -76,7 +73,10 @@ function About() {
             </div>
           </Fade>
         </div>
-        <form className="flex justify-center items-center flex-col gap-5 w-full lg:w-1/2">
+        <form
+          id="about"
+          className="flex justify-center items-center flex-col gap-5 w-full lg:w-1/2"
+        >
           <div className="flex justify-center sm:flex-row flex-col w-full items-center gap-4">
             <div className="flex justify-center  w-full items-start flex-col gap-2">
               <label className="text-white text-base" htmlFor="name">
