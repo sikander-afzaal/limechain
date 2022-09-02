@@ -19,7 +19,7 @@ function Services() {
       id="services"
       className="flex w-full justify-center items-center mt-[80px] px-5"
     >
-      <div className="relative flex justify-center items-center flex-col w-full isolate max-w-[1400px] gap-1">
+      <div className="relative flex justify-center items-center flex-col w-full isolate 3xl:max-w-[2000px] max-w-[1400px] gap-1">
         <Fade>
           <h1 className="text-center font-bold text-[40px] text-head">
             Labz Tech Services

@@ -5,10 +5,18 @@ import Services from "./Services";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Review from "./Review";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 import Talk from "./Talk";
-import trust from "../../Assets/trust.svg";
+import trust from "../../Assets/trust (1).png";
+import trust2 from "../../Assets/trust (2).png";
+import trust3 from "../../Assets/trust (3).png";
+import trust4 from "../../Assets/trust (4).png";
+import trust5 from "../../Assets/trust (5).png";
+import trust6 from "../../Assets/trust (6).png";
 import About from "./About";
 import { Fade } from "react-reveal";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 function Index() {
   const particlesInit = async (main) => {
     await loadFull(main);
@@ -576,38 +584,123 @@ function Index() {
       />
       <Hero />
       <Fade>
-        <div className="w-full max-w-[1244px] px-5 mx-auto flex flex-col justify-start items-start gap-4 mt-[20px] md:mt-[100px]">
+        <div className="w-full 3xl:max-w-[2000px] max-w-[1244px] px-5 mx-auto flex flex-col justify-start items-start gap-4 mt-[20px] md:mt-[100px]">
           <h2 className="font-bold text-[22px] text-text">Trusted By:</h2>
-          <div className="sm:flex grid grid-cols-2 w-full sm:justify-between sm:items-center flex-wrap gap-2 sm:gap-6 sm:max-w-[900px]">
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
+          <Splide
+            options={{
+              rewind: true,
+              width: "100%",
+              arrows: false,
+              pagination: false,
+              perPage: 2,
+              gap: "2rem",
+              type: "loop",
+              autoScroll: {
+                speed: 2,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+              },
+            }}
+            extensions={{ AutoScroll }}
+            className="block sm:hidden"
+          >
+            <SplideSlide>
+              <div className=" flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto  w-auto">
+                <img
+                  className="h-full max-w-full object-contain"
+                  src={trust}
+                  alt=""
+                />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className=" flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto  w-auto">
+                <img
+                  className="h-full max-w-full object-contain"
+                  src={trust2}
+                  alt=""
+                />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className=" flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto  w-auto">
+                <img
+                  className="h-full max-w-full object-contain"
+                  src={trust3}
+                  alt=""
+                />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className=" flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto  w-auto">
+                <img
+                  className="h-full max-w-full object-contain"
+                  src={trust4}
+                  alt=""
+                />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className=" flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto  w-auto">
+                <img
+                  className="h-full max-w-full object-contain"
+                  src={trust5}
+                  alt=""
+                />
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className=" flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto  w-auto">
+                <img
+                  className="h-full max-w-full object-contain"
+                  src={trust6}
+                  alt=""
+                />
+              </div>
+            </SplideSlide>
+          </Splide>
+          <div className="hidden sm:grid items-center grid-cols-3 w-full  gap-2 sm:gap-6 sm:max-w-[900px]">
+            <div className="bg-[#f3f4f5] flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto sm:bg-transparent w-full">
+              <img
+                className="h-full max-w-full object-contain"
+                src={trust}
+                alt=""
+              />
             </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
+            <div className="bg-[#f3f4f5] flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto sm:bg-transparent w-full">
+              <img
+                className="h-full w-full object-contain"
+                src={trust2}
+                alt=""
+              />
             </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
+            <div className="bg-[#f3f4f5] flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto sm:bg-transparent w-full">
+              <img
+                className="h-full w-full object-contain"
+                src={trust3}
+                alt=""
+              />
             </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
+            <div className="bg-[#f3f4f5] flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto sm:bg-transparent w-full">
+              <img
+                className="h-full w-full object-contain"
+                src={trust4}
+                alt=""
+              />
             </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
+            <div className="bg-[#f3f4f5] flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto sm:bg-transparent w-full">
+              <img
+                className="h-full w-full object-contain"
+                src={trust5}
+                alt=""
+              />
             </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
-            </div>
-            <div className="bg-[#f3f4f5] flex justify-center items-center h-[114px] sm:h-auto sm:bg-transparent w-full sm:w-auto">
-              <img src={trust} alt="" />
+            <div className="bg-[#f3f4f5] flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto sm:bg-transparent w-full">
+              <img
+                className="h-full w-full object-contain"
+                src={trust6}
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -616,7 +709,7 @@ function Index() {
       <Choose />
       <Services />
 
-      <Review />
+      {/* <Review /> */}
       <Talk />
       <About />
     </div>

@@ -9,6 +9,9 @@ module.exports = {
         main: "#6d2de7",
         text: "white",
       },
+      screens: {
+        "3xl": "1920px",
+      },
       backgroundImage: {
         "hero-pattern": "url('/src/Assets/hero-bg.svg')",
         "footer-texture": "url('/img/footer-texture.png')",

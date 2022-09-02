@@ -7,7 +7,7 @@ function Review() {
       id="clients"
       className="flex justify-center items-center w-full px-5 mt-[100px] text-center"
     >
-      <div className="flex isolate gap-1 justify-center items-center flex-col w-full max-w-[1244px] relative">
+      <div className="flex isolate gap-1 justify-center items-center flex-col w-full 3xl:max-w-[2000px] max-w-[1244px] relative">
         <Fade top cascade>
           <h2 className="uppercase text-main font-bold text-[20px]">
             Feedback

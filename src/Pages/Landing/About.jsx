@@ -25,7 +25,7 @@ function About() {
       id="about"
       className="flex justify-center  items-center w-full px-5 mt-[100px]"
     >
-      <div className="flex isolate gap-10 justify-center items-start lg:flex-row flex-col  w-full max-w-[1244px] relative">
+      <div className="flex isolate gap-10 justify-center items-start lg:flex-row flex-col  w-full 3xl:max-w-[2000px] max-w-[1244px] relative">
         <div className="flex isolate gap-10 justify-center items-start flex-col w-full lg:w-1/2">
           <Fade top>
             <h1 className="text-head text-4xl sm:text-5xl font-bold max-w-[900px]">
