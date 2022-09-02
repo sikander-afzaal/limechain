@@ -18,7 +18,7 @@ function Index() {
     return;
   };
   return (
-    <div>
+    <div className="pb-10">
       <Particles
         id="tsparticles"
         init={particlesInit}
