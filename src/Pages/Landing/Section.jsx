@@ -17,7 +17,7 @@ function Section({ order }) {
               </h1>
               <p className="text-base leading-loose">
                 An omnibus Wallet-as-a-Service integration that allows users on
-                your platform to seamless create Crypto wallets through
+                your platform to seamlessly create Crypto wallets through
                 inputting their email address
               </p>
               <h2 className="flex gap-4 justify-start items-center text-main text-md sm:text-xl">
