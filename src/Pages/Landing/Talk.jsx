@@ -8,8 +8,8 @@ function Talk() {
         <div className="p-5 lg:pl-5 lg:p-0 flex justify-center items-start flex-col  gap-3">
           <Fade left>
             <h1 className="text-white font-bold text-[20px] md:text-[25px]">
-              We are on the mission to build cutting-edge Web3 product
-              ecosystems for our partner clients!
+              We are on a mission to build cutting-edge Web3 product ecosystems
+              for our partner clients!
             </h1>
           </Fade>
           <Fade delay={500}>
