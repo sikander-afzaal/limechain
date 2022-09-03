@@ -17,6 +17,7 @@ import trust6 from "../../Assets/trust (6).png";
 import About from "./About";
 import { Fade } from "react-reveal";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import Section from "./Section";
 function Index() {
   const particlesInit = async (main) => {
     await loadFull(main);
@@ -605,7 +606,7 @@ function Index() {
             className="block sm:hidden"
           >
             <SplideSlide>
-              <div className=" flex justify-center items-center sm:w-[140px] h-[114px] sm:h-auto  w-auto">
+              <div className=" flex justify-center items-center sm:w-[140px] h-[154px] sm:h-auto  w-auto">
                 <img
                   className="h-full max-w-full object-contain"
                   src={trust}
@@ -707,6 +708,7 @@ function Index() {
       </Fade>
 
       <Choose />
+      <Section />
       <Services />
 
       {/* <Review /> */}

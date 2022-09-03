@@ -34,7 +34,6 @@ function Hero() {
             className="opacity-30  object-contain  w-full h-full"
             alt=""
           />
-          <div className="absolute left-0 bottom-0 bg-gradient-black h-[90px] w-full"></div>
         </div>
       </div>
     </div>

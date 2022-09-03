@@ -1,8 +1,7 @@
 import React from "react";
 function ServiceBox({ text }) {
   return (
-    <div className="flex w-full justify-between items-start md:w-[275px] h-[130px] rounded p-5 flex-col bg-main text-white">
-      <div className="w-[30%] h-[2px] bg-white"></div>
+    <div className="flex w-full border-t-[8px] border-main border-solid justify-between items-start md:w-[275px] h-[100px] rounded-md p-5 flex-col bg-white text-black">
       <p className="text-lg">{text}</p>
     </div>
   );
