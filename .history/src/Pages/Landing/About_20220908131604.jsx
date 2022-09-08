@@ -8,7 +8,7 @@ function About() {
   const [dropText, setDropText] = useState([
     "Complete Product(s) Development",
     "As soon as possible",
-    "Under $50,000",
+    "Up to $10,000",
   ]);
   const settingDropText = (e, num) => {
     setDrop((prev) => {
@@ -76,8 +76,6 @@ function About() {
         <form
           id="about"
           className="flex justify-center items-center flex-col gap-5 w-full lg:w-1/2"
-          action="https://public.herotofu.com/v1/8fed0d70-2e42-11ed-9d7d-1fea1503699b"
-          method="post"
         >
           <div className="flex justify-center sm:flex-row flex-col w-full items-center gap-4">
             <div className="flex justify-center  w-full items-start flex-col gap-2">
@@ -248,7 +246,7 @@ function About() {
                 }}
                 className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
               >
-                Under $50,000
+                Up to $10,000
               </p>
               <p
                 onClick={(e) => {
@@ -256,7 +254,7 @@ function About() {
                 }}
                 className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
               >
-                $50,000 - $250,000
+                $10,000 - $25,000
               </p>
               <p
                 onClick={(e) => {
@@ -264,7 +262,7 @@ function About() {
                 }}
                 className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
               >
-                $250,000 - $500,000
+                $25,000 - $50,000
               </p>
               <p
                 onClick={(e) => {
@@ -272,7 +270,15 @@ function About() {
                 }}
                 className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
               >
-                Above $500,000
+                $50,000 - $100,000
+              </p>
+              <p
+                onClick={(e) => {
+                  settingDropText(e, 2);
+                }}
+                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
+              >
+                $100,000+
               </p>
             </div>
           </div>
