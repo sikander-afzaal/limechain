@@ -76,8 +76,7 @@ function About() {
         <form
           id="about"
           className="flex justify-center items-center flex-col gap-5 w-full lg:w-1/2"
-          action="https://public.herotofu.com/v1/8fed0d70-2e42-11ed-9d7d-1fea1503699b"
-          method="post"
+          action="https://public.herotofu.com/v1/8fed0d70-2e42-11ed-9d7d-1fea1503699b" method="POST"
         >
           <div className="flex justify-center sm:flex-row flex-col w-full items-center gap-4">
             <div className="flex justify-center  w-full items-start flex-col gap-2">
@@ -87,6 +86,7 @@ function About() {
               <input
                 type="text"
                 id="name"
+                name="Name:"
                 className="w-full border-gray-600 rounded-lg pl-3 bg-white text-black h-[50px] text-lg"
               />
             </div>
@@ -97,6 +97,7 @@ function About() {
               <input
                 type="number"
                 id="phone"
+                name="Phone:"
                 className="w-full border-gray-600 rounded-lg pl-3 bg-white text-black h-[50px] text-lg"
               />
             </div>
@@ -108,173 +109,47 @@ function About() {
             <input
               type="email"
               id="email"
+              name="Email:"
               className="w-full border-gray-600 rounded-lg pl-3 bg-white text-black h-[50px] text-lg"
             />
           </div>
           {/* drop downs ----------------------- */}
           <div className="relative w-full flex justify-start items-start flex-col gap-2">
-            <p className="text-white text-lg">Looking for</p>
-            <p
-              onClick={() =>
-                setDrop((prev) => {
-                  if (prev[0] === false) {
-                    return [true, false, false];
-                  } else {
-                    return [false, false, false];
-                  }
-                })
-              }
-              className={`flex justify-between cursor-pointer items-center text-lg ${
+            <label htmlFor="job-type" className="text-white text-lg">Looking for</label>
+            <select name="Looking For:" id="job-type" className={`flex justify-between cursor-pointer items-center text-lg ${
                 drop[0]
                   ? "rounded-br-none rounded-bl-none rounded-tr-lg rounded-tl-lg"
                   : "rounded-lg"
-              } px-3 bg-white text-black h-[50px] w-full`}
-            >
-              {dropText[0]}
-              <FontAwesomeIcon icon={faChevronDown} />
-            </p>
-            <div
-              className={`z-[10] flex-col gap-5 rounded-br-lg rounded-bl-lg absolute top-full left-0 w-full bg-white  justify-start items-start p-3 ${
-                drop[0] ? "flex" : "hidden"
-              }`}
-            >
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 0);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                Complete Product(s) Development
-              </p>
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 0);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                Prototype/MVP
-              </p>
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 0);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                Other Enquiry
-              </p>
-            </div>
+              } px-3 bg-white text-black h-[50px] w-full`}>
+              <option value="Complete Product(s) Development">Complete Product(s) Development</option>
+              <option value="Prototype/MVP">Prototype/MVP</option>
+              <option value="Other Enquiry">Other Enquiry</option>
+            </select>
           </div>
           <div className="relative w-full flex justify-start items-start flex-col gap-2">
-            <p className="text-white text-lg">I would like to start</p>
-            <p
-              onClick={() =>
-                setDrop((prev) => {
-                  if (prev[1] === false) {
-                    return [false, true, false];
-                  } else {
-                    return [false, false, false];
-                  }
-                })
-              }
-              className={`flex justify-between cursor-pointer items-center text-lg ${
+            <label htmlFor="time" className="text-white text-lg">I would like to start</label>
+            <select name="I would like to start:" id="time" className={`flex justify-between cursor-pointer items-center text-lg ${
                 drop[1]
                   ? "rounded-br-none rounded-bl-none rounded-tr-lg rounded-tl-lg"
                   : "rounded-lg"
-              } px-3 bg-white text-black h-[50px] w-full`}
-            >
-              {dropText[1]}
-              <FontAwesomeIcon icon={faChevronDown} />
-            </p>
-            <div
-              className={`z-[10] flex-col gap-5 rounded-br-lg rounded-bl-lg absolute top-full left-0 w-full bg-white  justify-start items-start p-3 ${
-                drop[1] ? "flex" : "hidden"
-              }`}
-            >
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 1);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                As soon as possible
-              </p>
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 1);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                Within the month
-              </p>
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 1);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                1-3 months from now, No specified date)
-              </p>
-            </div>
+              } px-3 bg-white text-black h-[50px] w-full`}>
+              <option value="As soon as possible">As soon as possible</option>
+              <option value="Within the month">Within the month</option>
+              <option value="1-3 months from now, No specified date">1-3 months from now, No specified date</option>
+            </select>
           </div>
           <div className="relative w-full flex justify-start items-start flex-col gap-2">
-            <p className="text-white text-lg">My budget range</p>
-            <p
-              onClick={() =>
-                setDrop((prev) => {
-                  if (prev[2] === false) {
-                    return [false, false, true];
-                  } else {
-                    return [false, false, false];
-                  }
-                })
-              }
-              className={`flex justify-between cursor-pointer items-center text-lg ${
+            <label htmlFor="budget" className="text-white text-lg">My budget range</label>
+            <select name="Budget:" id="budget" className={`flex justify-between cursor-pointer items-center text-lg ${
                 drop[2]
                   ? "rounded-br-none rounded-bl-none rounded-tr-lg rounded-tl-lg"
                   : "rounded-lg"
-              } px-3 bg-white text-black h-[50px] w-full`}
-            >
-              {dropText[2]}
-              <FontAwesomeIcon icon={faChevronDown} />
-            </p>
-            <div
-              className={`z-[10] flex-col gap-5 rounded-br-lg rounded-bl-lg absolute top-full left-0 w-full bg-white  justify-start items-start p-3 ${
-                drop[2] ? "flex" : "hidden"
-              }`}
-            >
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 2);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                Under $50,000
-              </p>
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 2);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                $50,000 - $250,000
-              </p>
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 2);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                $250,000 - $500,000
-              </p>
-              <p
-                onClick={(e) => {
-                  settingDropText(e, 2);
-                }}
-                className=" cursor-pointer items-center text-lg rounded-lg px-3 text-black  "
-              >
-                Above $500,000
-              </p>
-            </div>
+              } px-3 bg-white text-black h-[50px] w-full`}>
+              <option value="Under $50,000">Under $50,000</option>
+              <option value="$50,000 - $250,000">$50,000 - $250,000</option>
+              <option value="$250,000 - $500,000">$250,000 - $500,000</option>
+              <option value="Above $500,000">Above $500,000</option>
+            </select>
           </div>
           {/* drop downs ends ------------------------ */}
           <div className="flex justify-center  w-full items-start flex-col gap-2">
@@ -283,12 +158,11 @@ function About() {
             </label>
             <textarea
               id="message"
+              name="Message:"
               className="resize-none w-full border-gray-600 rounded-lg p-3  bg-white text-black h-[150px] text-lg"
             ></textarea>
           </div>
-          <button className="w-full xl:w-[260px] h-[50px] text-white bg-main rounded-md hover:bg-[#21d98d] hover:scale-105 transition-all text-base font-bold">
-            Send Inquiry
-          </button>
+          <input type="submit" value="Send Inquiry" className="w-full xl:w-[260px] h-[50px] text-white bg-main rounded-md hover:bg-[#21d98d] hover:scale-105 transition-all text-base font-bold" />
         </form>
         <Fade delay={1100}>
           <div className=" lg:hidden flex sm:flex-row sm:w-auto w-full flex-col justify-between items-center gap-8">
