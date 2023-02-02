@@ -1,6 +1,7 @@
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import gif from "../Assets/gif.gif";
 function Header() {
   const [header, setHeader] = useState(false);
@@ -44,6 +45,13 @@ function Header() {
             >
               Clients
             </a>
+            <Link
+              onClick={() => setHeader(false)}
+              to="/metalabz"
+              className="md:w-auto w-full md:py-0 py-4 text-white border-b-[1px] border-solid border-[#212934]  md:text-text font-bold text-base no-underline md:border-b-[3px] md:border-transparent hover:text-main md:hover:border-main transition-colors md:hover:text-text"
+            >
+              Metalabz
+            </Link>
 
             <a
               onClick={() => setHeader(false)}

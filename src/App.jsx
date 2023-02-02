@@ -1,12 +1,15 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./Layout/Header";
 import Index from "./Pages/Landing/Index";
+import Metaverse from "./Pages/Metaverse/Metaverse";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Index />
+      <Routes>
+        <Route element={<Index />} path="/" />
+        <Route element={<Metaverse />} path="/metalabz" />
+      </Routes>
     </div>
   );
 }

@@ -18,6 +18,7 @@ import About from "./About";
 import { Fade } from "react-reveal";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import Section from "./Section";
+import Header from "../../Layout/Header";
 function Index() {
   const particlesInit = async (main) => {
     await loadFull(main);
@@ -583,6 +584,7 @@ function Index() {
           zLayers: 100,
         }}
       />
+      <Header />
       <Hero />
       <Fade>
         <div className="w-full 3xl:max-w-[2000px] max-w-[1244px] px-5 mx-auto flex flex-col justify-start items-start gap-4 mt-[20px] md:mt-[100px]">
