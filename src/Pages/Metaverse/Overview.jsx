@@ -23,7 +23,7 @@ const Overview = () => {
           </div>
           <img
             src={overview1}
-            className="object-contain sm:max-w-[370px] w-full max-w-[330px]"
+            className="object-contain animate-bounce sm:max-w-[370px] w-full max-w-[330px]"
             alt=""
           />
         </div>
@@ -39,7 +39,7 @@ const Overview = () => {
           </div>
           <img
             src={overview2}
-            className="object-contain sm:max-w-[370px] w-full max-w-[330px]"
+            className="object-contain animate-bounce sm:max-w-[370px] w-full max-w-[330px]"
             alt=""
           />
         </div>
@@ -56,7 +56,7 @@ const Overview = () => {
           </div>
           <img
             src={overview3}
-            className="object-contain sm:max-w-[370px] w-full max-w-[330px]"
+            className="object-contain animate-bounce sm:max-w-[370px] w-full max-w-[330px]"
             alt=""
           />
         </div>

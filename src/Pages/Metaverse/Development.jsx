@@ -2,6 +2,7 @@ import MetaTitle from "../../Components/MetaTitle";
 import dev1 from "../../Assets/metaverse/dev1.png";
 import dev2 from "../../Assets/metaverse/dev2.png";
 import dev3 from "../../Assets/metaverse/dev3.png";
+import { Fade } from "react-reveal";
 
 const Development = () => {
   return (
@@ -11,7 +12,9 @@ const Development = () => {
       <div className="bg-[#FD44C9]  -z-10 blur-[230px] rotate-[90deg] w-full max-w-[520px]  h-[260px] absolute top-[58%] -right-[220px] "></div>
       <div className="bg-[#48FD44]  -z-10 blur-[230px] rotate-[180deg] w-full max-w-[520px]  h-[260px] absolute top-[78%] -left-[220px] "></div>
       <div className="flex justify-start gap-[70px] items-center sm:items-start flex-col w-[90%] max-w-[1100px] ">
-        <MetaTitle title="Development Services" />
+        <Fade top>
+          <MetaTitle title="Development Services" />
+        </Fade>
         <div className="flex justify-start items-start flex-col w-full gap-[80px] xl:gap-[200px]">
           <DevBox
             title="Research"

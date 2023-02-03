@@ -18,6 +18,18 @@ module.exports = {
       screens: {
         "3xl": "2000px",
       },
+      animation: {
+        bounce: "bounce 5s linear infinite",
+      },
+      keyframes: {
+        bounce: {
+          "0%, 100%": { transform: "translateY(-20px)" },
+          "50%": {
+            transform: "none",
+            animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
+          },
+        },
+      },
       backgroundImage: {
         footerMeta:
           "linear-gradient(120.83deg, #2D541B -3.98%, #000002 33.48%)",
