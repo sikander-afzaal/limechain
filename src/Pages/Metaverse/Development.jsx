@@ -45,21 +45,30 @@ const Development = () => {
 export default Development;
 
 const DevBox = ({ img, title, desc, order }) => {
+  const right = false;
   return (
     <div
       className={`flex justify-between gap-[40px] items-center w-full ${
         order ? "flex-col xl:flex-row-reverse" : "flex-col xl:flex-row"
       }`}
     >
-      <img src={img} alt="" />
-      <div className="flex justify-start items-center xl:items-start xl:text-left text-center flex-col max-w-[481px] gap-2 xl:gap-8">
-        <h3 className="text-white font-monument text-lg sm:text-2xl font-normal">
-          {title}
-        </h3>
-        <p className="text-lg sm:text-2xl font-normal font-chivo text-[#adadad] leading-[2]">
-          {desc}
-        </p>
-      </div>
+      <Fade
+        delay={300}
+        left={order ? false : true}
+        right={order ? true : false}
+      >
+        <img src={img} alt="" />
+      </Fade>
+      <Fade left={order ? true : false} right={order ? false : true}>
+        <div className="flex justify-start items-center xl:items-start xl:text-left text-center flex-col max-w-[481px] gap-2 xl:gap-8">
+          <h3 className="text-white font-monument text-lg sm:text-2xl font-normal">
+            {title}
+          </h3>
+          <p className="text-lg sm:text-2xl font-normal font-chivo text-[#adadad] leading-[2]">
+            {desc}
+          </p>
+        </div>
+      </Fade>
     </div>
   );
 };
