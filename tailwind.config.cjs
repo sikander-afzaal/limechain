@@ -19,6 +19,8 @@ module.exports = {
         "3xl": "2000px",
       },
       backgroundImage: {
+        footerMeta:
+          "linear-gradient(120.83deg, #2D541B -3.98%, #000002 33.48%)",
         metaverse: "linear-gradient(133.79deg, #150A27 10.22%, #000002 35.17%)",
         "hero-pattern": "url('/src/Assets/hero-bg.svg')",
         "footer-texture": "url('/img/footer-texture.png')",

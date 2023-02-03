@@ -7,8 +7,8 @@ import img4 from "../../Assets/metaverse/service4.png";
 const Consultation = () => {
   return (
     <div className="w-full flex mt-[100px] sm:mt-[150px] justify-center items-center flex-col relative isolate">
-      <div className="bg-[#B94BE0D6] -z-10 blur-[230px] rotate-[180px] w-full max-w-[520px]  h-[260px] absolute -top-[2%] right-[0]"></div>
-      <div className="bg-[#B94BE0] -z-10 blur-[230px] rotate-[180px] w-full max-w-[520px]  h-[260px] absolute top-[88%] -left-[200px]"></div>
+      <div className="bg-[#B94BE0D6]  -z-10 blur-[230px] w-full max-w-[520px]  h-[260px] absolute -top-[2%] right-[0]"></div>
+      <div className="bg-[#B94BE0] -z-10 blur-[230px]  w-full max-w-[520px]  h-[260px] absolute top-[88%] -translate-x-[300px] left-[0]"></div>
       <div className="w-[90%] flex justify-start items-center sm:items-start flex-col gap-[70px] max-w-[1100px]">
         <MetaTitle title="Consultation Services" />
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 w-full gap-[50px]">
