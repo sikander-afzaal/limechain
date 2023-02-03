@@ -1,6 +1,7 @@
 import footLeft from "../Assets/metaverse/foot-left.png";
 import footRight from "../Assets/metaverse/foot-right.png";
 import gif from "../Assets/gif.gif";
+import { Link } from "react-router-dom";
 
 const FooterMetaverse = () => {
   return (
@@ -16,12 +17,14 @@ const FooterMetaverse = () => {
           className="object-contain sm:block hidden absolute right-0 -top-[40px] -z-10"
           alt=""
         />
-        <div className="flex justify-center items-center gap-2">
-          <img src={gif} className="w-[37px] object-contain" alt="" />
-          <p className="text-white font-black text-[36px] font-chivo">
-            THE LABZ
-          </p>
-        </div>
+        <Link to={"/"}>
+          <div className="flex justify-center items-center gap-2">
+            <img src={gif} className="w-[37px] object-contain" alt="" />
+            <p className="text-white font-black text-[36px] font-chivo">
+              THE LABZ
+            </p>
+          </div>
+        </Link>
         <div className="flex justify-center text-center items-center pt-[40px] mt-[40px] sm:mt-[80px] w-full border-t-[1px] border-solid border-[#2A321E]">
           <p className="font-chivo font-normal text-sm sm:text-base text-[#a2a2a2]">
             ©The Labz, est 2021 priority. All rights reserved.
