@@ -50,7 +50,7 @@ function Header() {
               to="/metalabz"
               className="md:w-auto w-full md:py-0 py-4 text-white border-b-[1px] border-solid border-[#212934]  md:text-text font-bold text-base no-underline md:border-b-[3px] md:border-transparent hover:text-main md:hover:border-main transition-colors md:hover:text-text"
             >
-              Metalabz
+              Metaverse
             </Link>
 
             <a

@@ -19,10 +19,7 @@ const FooterMetaverse = () => {
         />
         <Link to={"/"}>
           <div className="flex justify-center items-center gap-2">
-            <img src={gif} className="w-[37px] object-contain" alt="" />
-            <p className="text-white font-black text-[36px] font-chivo">
-              THE LABZ
-            </p>
+            <img src={gif} className="w-[80px] object-contain" alt="" />
           </div>
         </Link>
         <div className="flex justify-center text-center items-center pt-[40px] mt-[40px] sm:mt-[80px] w-full border-t-[1px] border-solid border-[#2A321E]">
