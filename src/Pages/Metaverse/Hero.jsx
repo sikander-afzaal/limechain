@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 
 const Hero = () => {
   return (
-    <div className="flex isolate min-h-screen w-full pt-[50px] md:pt-[100px] xl:pt-[200px] justify-start items-center relative flex-col">
+    <div className="flex isolate min-h-screen w-full pt-[30px] md:pt-[100px] xl:pt-[200px] justify-start items-center relative flex-col">
       {/* shadows------------ */}
       <div className="bg-[#6D2DE6] opacity-60 md:opacity-100 -z-10 blur-[230px] rotate-[180px] w-full max-w-[520px]  h-[260px] absolute -top-[5%] -left-[200px]"></div>
       <div className="bg-[#00A3FF] opacity-60 md:opacity-100 -z-10 blur-[230px]  w-full max-w-[520px]  h-[260px] absolute bottom-[8%] -left-[200px] sm:-left-[120px]"></div>
