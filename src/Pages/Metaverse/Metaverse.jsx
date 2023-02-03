@@ -14,7 +14,7 @@ const Metaverse = () => {
       <div className="bg-[#8A44FD]  -z-10 blur-[230px] rotate-[180deg] w-full max-w-[520px]  h-[260px] absolute bottom-0 left-0 sm:opacity-100 opacity-60 sm:right-[0] "></div>
       <Link
         to={"/"}
-        className="absolute top-5 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-10 z-20"
+        className="absolute  md:block hidden top-5 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-10 z-20"
       >
         <img src={gif} className="object-contain w-[80px]" alt="" />
       </Link>
