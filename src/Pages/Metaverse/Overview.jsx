@@ -59,7 +59,7 @@ const Overview = () => {
           <div className="flex lg:text-left text-center items-center justify-start max-w-[583px] gap-5 lg:items-start flex-col">
             <Fade bottom>
               <p className="text-metaPara  font-chivo font-normal text-lg sm:text-2xl leading-[2]">
-                research and develop new technologies and techniques for
+                Research and develop new technologies and techniques for
                 creating immersive virtual worlds. This could include things
                 like 3D graphics, physics simulations,
                 networking, and user input.
