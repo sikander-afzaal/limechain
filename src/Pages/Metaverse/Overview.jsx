@@ -57,15 +57,12 @@ const Overview = () => {
         </div>
         <div className="w-full justify-between lg:flex-row flex-col items-center flex gap-10">
           <div className="flex lg:text-left text-center items-center justify-start max-w-[583px] gap-5 lg:items-start flex-col">
-            <Fade cascade bottom>
+            <Fade bottom>
               <p className="text-metaPara  font-chivo font-normal text-lg sm:text-2xl leading-[2]">
-                At The Labz, we are pioneers in the field of metaverse, virtual
-                reality, and artificial intelligence. 
-              </p>
-              <p className="text-metaPara  font-chivo font-normal text-lg sm:text-2xl leading-[2]">
-                Our team of experts have years of experience creating some of
-                the most immersive and captivating virtual environments in the
-                world.
+                research and develop new technologies and techniques for
+                creating immersive virtual worlds. This could include things
+                like 3D graphics, physics simulations,
+                networking, and user input.
               </p>
             </Fade>
           </div>
